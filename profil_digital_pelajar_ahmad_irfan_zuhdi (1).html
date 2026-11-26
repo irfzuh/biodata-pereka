@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ms" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Digital — Ahmad Irfan Zuhdi (EDUP6023)</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-stone-950 text-stone-100 font-sans antialiased min-h-screen flex items-center justify-center p-0 m-0 selection:bg-emerald-500/30 selection:text-emerald-200 overflow-hidden">
+
+    <!-- Bekas Utama Khusus Dimensi Jotform App Builder (686px x 500px) -->
+    <div id="jotform-app-shell" class="w-full max-w-[686px] h-[500px] max-h-[500px] bg-emerald-950 relative overflow-hidden flex flex-col justify-between rounded-2xl border border-emerald-500/35 shadow-2xl">
+
+        <!-- Latar Belakang Utama: Diorama Hutan Papercut Berlapis 3D -->
+        <div id="page-bg-wrapper" class="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none">
+            <svg id="bg-diorama-scene" class="w-full h-full object-cover scale-[1.03] transition-transform duration-700 ease-out" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <!-- Cahaya Matahari & Kabus Lembah Tengah -->
+                    <radialGradient id="dioramaSunGlow" cx="50%" cy="36%" r="58%">
+                        <stop offset="0%" stop-color="#fefce8"/>
+                        <stop offset="28%" stop-color="#ecfccb"/>
+                        <stop offset="58%" stop-color="#a7f3d0"/>
+                        <stop offset="100%" stop-color="#065f46"/>
+                    </radialGradient>
+                    <!-- Kecerunan Lapisan Gunung & Bukit -->
+                    <linearGradient id="ridgeBack" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#d9f99d" stop-opacity="0.95"/>
+                        <stop offset="100%" stop-color="#86efac"/>
+                    </linearGradient>
+                    <linearGradient id="ridgeMid1" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#a7f3d0"/>
+                        <stop offset="100%" stop-color="#34d399"/>
+                    </linearGradient>
+                    <linearGradient id="ridgeMid2" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#6ee7b7"/>
+                        <stop offset="100%" stop-color="#10b981"/>
+                    </linearGradient>
+                    <linearGradient id="ridgeDeep" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#2dd4bf"/>
+                        <stop offset="100%" stop-color="#047857"/>
+                    </linearGradient>
+                    <linearGradient id="canopyLight" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#86efac"/>
+                        <stop offset="100%" stop-color="#22c55e"/>
+                    </linearGradient>
+                    <linearGradient id="canopyDark" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#16a34a"/>
+                        <stop offset="100%" stop-color="#065f46"/>
+                    </linearGradient>
+                    <linearGradient id="meadowBase" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#bbf7d0"/>
+                        <stop offset="100%" stop-color="#4ade80"/>
+                    </linearGradient>
+                    <!-- Bayang-bayang Potongan Kertas (Papercut Depth) -->
+                    <filter id="cutShadowSoft" x="-10%" y="-10%" width="120%" height="125%">
+                        <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#022c22" flood-opacity="0.32"/>
+                    </filter>
+                    <filter id="cutShadowDeep" x="-12%" y="-12%" width="124%" height="128%">
+                        <feDropShadow dx="0" dy="9" stdDeviation="10" flood-color="#022c22" flood-opacity="0.55"/>
+                    </filter>
+                </defs>
+
+                <!-- Lapisan 1: Langit Kabus Keemasan -->
+                <rect width="1440" height="900" fill="url(#dioramaSunGlow)"/>
+
+                <!-- Kawanan Burung Kecil di Lembah Jauh -->
+                <g stroke="#365314" stroke-width="2.2" stroke-linecap="round" fill="none" opacity="0.65">
+                    <path d="M745 245 Q751 239 756 245 Q761 239 767 245"/>
+                    <path d="M775 232 Q780 227 784 232 Q788 227 793 232"/>
+                    <path d="M760 264 Q764 260 768 264 Q772 260 776 264"/>
+                    <path d="M792 255 Q796 251 800 255 Q804 251 808 255"/>
+                    <path d="M724 262 Q728 258 732 262 Q736 258 740 262"/>
+                    <path d="M668 355 Q672 351 676 355 Q680 351 684 355"/>
+                </g>
+
+                <!-- Lapisan 2: Banjaran Bukit Paling Jauh -->
+                <path d="M0 390 Q190 340 380 385 Q560 320 730 375 Q910 315 1110 370 Q1290 325 1440 365 L1440 900 L0 900 Z" fill="url(#ridgeBack)" filter="url(#cutShadowSoft)"/>
+
+                <!-- Lapisan 3: Lembah Kabus Berlapis -->
+                <path d="M0 445 Q220 395 450 450 Q660 405 860 455 Q1120 385 1440 440 L1440 900 L0 900 Z" fill="url(#ridgeMid1)" filter="url(#cutShadowSoft)"/>
+
+                <!-- Lapisan 4: Tebing & Bukit Hijau Pudina -->
+                <path d="M0 510 Q160 455 340 505 Q540 465 730 525 Q950 450 1180 510 Q1320 475 1440 495 L1440 900 L0 900 Z" fill="url(#ridgeMid2)" filter="url(#cutShadowSoft)"/>
+
+                <!-- Lapisan 5: Siluet Rimba & Bukit Zamrud -->
+                <path d="M0 580 Q140 535 280 575 L310 555 L340 580 Q510 535 690 595 Q880 545 1060 585 L1095 550 L1130 580 Q1290 535 1440 570 L1440 900 L0 900 Z" fill="url(#ridgeDeep)" filter="url(#cutShadowDeep)"/>
+
+                <!-- Lapisan 6: Tebing Sisi Kiri & Kanan (Bingkai Diorama) -->
+                <path d="M0 160 L150 220 L210 360 L275 440 L240 660 L0 700 Z" fill="#115e59" opacity="0.65" filter="url(#cutShadowDeep)"/>
+                <path d="M1440 150 L1280 230 L1210 380 L1165 490 L1220 680 L1440 710 Z" fill="#115e59" opacity="0.65" filter="url(#cutShadowDeep)"/>
+
+                <!-- Lapisan 7: Batang Pokok Tinggi Kiri & Kanan dengan Dahan -->
+                <g fill="#064e3b" filter="url(#cutShadowDeep)">
+                    <path d="M75 0 L122 0 L132 230 L175 140 L190 148 L135 268 L148 820 L65 820 L82 260 L35 170 L50 162 L85 225 Z"/>
+                    <path d="M235 0 L268 0 L274 210 L325 130 L338 138 L276 245 L286 820 L225 820 L238 255 L195 165 L208 158 L240 220 Z"/>
+                    <path d="M405 0 L432 0 L438 195 L488 125 L499 133 L440 225 L446 820 L398 820 L406 235 L362 150 L374 143 L408 202 Z"/>
+                    <path d="M1010 0 L1038 0 L1034 205 L978 130 L967 138 L1032 235 L1026 820 L1072 820 L1065 245 L1115 155 L1103 148 L1066 210 Z"/>
+                    <path d="M1165 0 L1202 0 L1195 225 L1135 135 L1122 143 L1192 260 L1182 820 L1245 820 L1232 265 L1282 175 L1269 167 L1234 228 Z"/>
+                    <path d="M1325 0 L1375 0 L1365 820 L1312 820 Z"/>
+                </g>
+
+                <!-- Lapisan 8: Kanopi Daun Atas Berlapis -->
+                <path d="M0 0 L1440 0 L1440 165 Q1375 215 1310 175 Q1245 230 1175 170 Q1100 210 1035 155 Q965 190 905 135 Q835 165 770 115 Q700 155 630 110 Q560 165 490 130 Q420 195 345 150 Q275 220 205 165 Q135 225 65 170 Q30 195 0 175 Z" fill="url(#canopyDark)" filter="url(#cutShadowDeep)"/>
+                <path d="M0 0 L1440 0 L1440 115 Q1360 160 1285 118 Q1210 170 1135 115 Q1055 155 980 105 Q900 135 825 85 Q745 120 670 80 Q590 125 515 90 Q435 145 360 105 Q280 160 205 112 Q125 165 55 115 L0 130 Z" fill="url(#canopyLight)" filter="url(#cutShadowSoft)"/>
+
+                <!-- Lapisan 9: Semak-Samun & Pokok Renek Hadapan -->
+                <path d="M0 685 Q75 630 155 675 Q235 620 320 680 Q415 645 495 695 Q595 655 695 705 Q795 660 895 700 Q995 645 1090 685 Q1185 620 1280 675 Q1365 630 1440 675 L1440 900 L0 900 Z" fill="#065f46" filter="url(#cutShadowDeep)"/>
+
+                <!-- Lapisan 10: Rumput & Padang Hijau Lembut Paling Hadapan -->
+                <path d="M0 785 Q240 745 480 790 Q720 825 960 780 Q1200 745 1440 785 L1440 900 L0 900 Z" fill="url(#meadowBase)" filter="url(#cutShadowDeep)"/>
+                <g fill="#047857" filter="url(#cutShadowSoft)">
+                    <path d="M165 782 L152 725 L178 780 Z"/>
+                    <path d="M182 781 L196 732 L195 782 Z"/>
+                    <path d="M370 788 L358 730 L384 789 Z"/>
+                    <path d="M585 802 L575 745 L598 803 Z"/>
+                    <path d="M875 792 L864 736 L888 791 Z"/>
+                    <path d="M1140 776 L1128 718 L1153 776 Z"/>
+                    <path d="M1265 778 L1278 722 L1278 779 Z"/>
+                </g>
+            </svg>
+            <!-- Lapisan Kecerunan Halus untuk Kontras & Kebolehbacaan Kad UI -->
+            <div class="absolute inset-0 bg-gradient-to-b from-emerald-950/50 via-stone-950/40 to-emerald-950/70"></div>
+        </div>
+
+        <!-- Bar Navigasi Atas Kompak -->
+        <header class="relative z-20 shrink-0 h-11 px-3.5 backdrop-blur-xl bg-stone-950/80 border-b border-emerald-700/35 flex items-center justify-between gap-2">
+            <div class="flex items-center gap-2.5 min-w-0">
+                <div class="w-7 h-7 rounded-lg bg-gradient-to-br from-emerald-500 to-teal-700 flex items-center justify-center shadow-md shadow-emerald-950/60 shrink-0">
+                    <i data-lucide="user-check" class="w-3.5 h-3.5 text-white"></i>
+                </div>
+                <div class="truncate">
+                    <h1 class="text-xs font-bold tracking-tight text-white truncate leading-tight">AHMAD IRFAN ZUHDI BIN MUHD ZUKHAIRI</h1>
+                    <p class="text-[10px] text-emerald-300/90 truncate leading-tight">PISMP PAI 3 • Ambilan 2026/2030 • Subjek EDUP6023</p>
+                </div>
+            </div>
+
+            <!-- Kawalan Audio SFX & Paparan Skrin Penuh -->
+            <div class="flex items-center gap-1.5 shrink-0">
+                <button id="btn-toggle-sfx" type="button" title="Kesan Bunyi Butang (SFX)" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-stone-900 hover:bg-stone-800 border border-emerald-500/35 text-emerald-300 text-[11px] font-medium transition active:scale-95">
+                    <i data-lucide="volume-2" class="w-3.5 h-3.5"></i>
+                    <span>SFX: Aktif</span>
+                </button>
+
+                <button id="btn-fullscreen" type="button" title="Paparan Skrin Penuh Gambar" class="p-1.5 rounded-lg bg-stone-900 hover:bg-stone-800 border border-stone-700/80 text-stone-200 hover:text-emerald-300 transition active:scale-95">
+                    <i data-lucide="maximize-2" class="w-3.5 h-3.5"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Kandungan Utama Profil Pelajar (Susunan 2 Lajur Terkawal 686x500) -->
+        <main class="relative z-10 flex-1 min-h-0 px-3.5 py-2.5 grid grid-cols-12 gap-3 items-stretch">
+
+            <!-- Lajur Kiri (4 Kolum): Bingkai Potret Pelajar -->
+            <section class="col-span-4 h-full min-h-0 flex flex-col">
+                <div id="artwork-frame" class="relative w-full h-full rounded-xl overflow-hidden shadow-[0_14px_35px_-8px_rgba(2,44,34,0.9)] ring-1 ring-emerald-300/45 bg-emerald-950/75 flex items-center justify-center">
+                    <img 
+                        id="main-artwork" 
+                        src="https://raw.githubusercontent.com/irfzuh/biodata-pereka/67e83d514bb36bb4f0a617aa4a6421765018b674/Forest-Toned%20Phone%20Booth%20Portrait.webp" 
+                        alt="Ahmad Irfan Zuhdi bin Muhd Zukhairi — PISMP PAI 3" 
+                        class="w-full h-full object-cover object-top block select-none"
+                    />
+
+                    <!-- Paparan Fallback jika tiada capaian internet -->
+                    <div id="fallback-illustration" class="hidden w-full h-full bg-gradient-to-b from-emerald-800 via-emerald-900 to-teal-950 p-3 flex flex-col justify-between text-center">
+                        <span class="px-2 py-0.5 rounded-full bg-emerald-950/80 border border-emerald-400/30 text-emerald-200 text-[10px] font-medium">
+                            PISMP PAI 3
+                        </span>
+                        <div class="my-auto px-2 py-3 rounded-xl bg-stone-950/80 border border-emerald-500/30">
+                            <i data-lucide="user-check" class="w-5 h-5 text-emerald-300 mx-auto mb-1.5"></i>
+                            <p class="text-[11px] font-bold text-white leading-snug">AHMAD IRFAN ZUHDI</p>
+                            <p class="text-[10px] text-stone-300 mt-1">Ambilan 2026/2030</p>
+                        </div>
+                        <span class="text-[10px] text-emerald-200/80 font-medium">EDUP6023</span>
+                    </div>
+
+                    <!-- Lencana Halus Bawah Gambar -->
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-stone-950/90 via-stone-950/45 to-transparent px-2.5 py-2 pointer-events-none flex items-center justify-between">
+                        <span class="text-[10px] font-semibold text-emerald-200 tracking-wide">EDUP6023</span>
+                        <span class="text-[9px] text-stone-300 bg-stone-900/80 px-1.5 py-0.5 rounded border border-emerald-500/25">2026/2030</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Lajur Kanan (8 Kolum): Kad Profil Interaktif & Paparan Perincian -->
+            <aside class="col-span-8 h-full min-h-0 flex flex-col justify-between gap-2">
+
+                <!-- Panel Butang Maklumat Pelajar -->
+                <div class="rounded-xl bg-stone-950/80 backdrop-blur-xl border border-emerald-500/35 p-2.5 shadow-lg flex flex-col gap-1.5">
+                    <div class="flex items-center justify-between">
+                        <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-emerald-500/20 text-emerald-300 text-[10px] font-semibold tracking-wide">
+                            <i data-lucide="graduation-cap" class="w-3 h-3"></i>
+                            PROFIL PELAJAR INTERAKTIF
+                        </span>
+                        <span class="text-[10px] text-emerald-300/80 flex items-center gap-1">
+                            <i data-lucide="mouse-pointer-click" class="w-3 h-3"></i>
+                            Tekan kad maklumat
+                        </span>
+                    </div>
+
+                    <!-- Butang Maklumat 1: Nama Penuh -->
+                    <button type="button" data-info-card="0" class="info-card-btn w-full text-left px-2.5 py-1.5 rounded-lg bg-stone-900/90 hover:bg-emerald-950/50 border border-emerald-500/55 ring-1 ring-emerald-500/25 transition-all duration-150 active:scale-[0.99] flex items-center justify-between gap-2 group">
+                        <div class="min-w-0">
+                            <span class="text-[9px] uppercase tracking-wider text-emerald-400 font-semibold block leading-none">Nama Penuh</span>
+                            <p class="text-white font-bold mt-1 text-xs truncate">AHMAD IRFAN ZUHDI BIN MUHD ZUKHAIRI</p>
+                        </div>
+                        <span class="w-6 h-6 rounded-md bg-emerald-500/15 text-emerald-300 flex items-center justify-center shrink-0 group-hover:scale-105 transition">
+                            <i data-lucide="user" class="w-3.5 h-3.5"></i>
+                        </span>
+                    </button>
+
+                    <!-- Baris 2: Unit & Ambilan -->
+                    <div class="grid grid-cols-2 gap-1.5">
+                        <!-- Butang Maklumat 2: Unit -->
+                        <button type="button" data-info-card="1" class="info-card-btn w-full text-left px-2.5 py-1.5 rounded-lg bg-stone-900/90 hover:bg-emerald-950/50 border border-stone-800 hover:border-emerald-500/40 transition-all duration-150 active:scale-[0.98] flex items-center justify-between gap-1.5 group">
+                            <div class="min-w-0">
+                                <span class="text-[9px] uppercase tracking-wider text-emerald-400 font-semibold block leading-none">Unit</span>
+                                <p class="text-white font-semibold mt-1 text-xs truncate">PISMP PAI 3</p>
+                            </div>
+                            <i data-lucide="users" class="w-3.5 h-3.5 text-emerald-400/80 group-hover:scale-105 transition shrink-0"></i>
+                        </button>
+
+                        <!-- Butang Maklumat 3: Ambilan -->
+                        <button type="button" data-info-card="2" class="info-card-btn w-full text-left px-2.5 py-1.5 rounded-lg bg-stone-900/90 hover:bg-emerald-950/50 border border-stone-800 hover:border-emerald-500/40 transition-all duration-150 active:scale-[0.98] flex items-center justify-between gap-1.5 group">
+                            <div class="min-w-0">
+                                <span class="text-[9px] uppercase tracking-wider text-emerald-400 font-semibold block leading-none">Ambilan</span>
+                                <p class="text-white font-semibold mt-1 text-xs truncate">2026/2030</p>
+                            </div>
+                            <i data-lucide="calendar-days" class="w-3.5 h-3.5 text-emerald-400/80 group-hover:scale-105 transition shrink-0"></i>
+                        </button>
+                    </div>
+
+                    <!-- Baris 3: Subjek & Pengkhususan -->
+                    <div class="grid grid-cols-2 gap-1.5">
+                        <!-- Butang Maklumat 4: Subjek -->
+                        <button type="button" data-info-card="3" class="info-card-btn w-full text-left px-2.5 py-1.5 rounded-lg bg-stone-900/90 hover:bg-emerald-950/50 border border-stone-800 hover:border-emerald-500/40 transition-all duration-150 active:scale-[0.98] flex items-center justify-between gap-1.5 group">
+                            <div class="min-w-0">
+                                <span class="text-[9px] uppercase tracking-wider text-emerald-400 font-semibold block leading-none">Subjek</span>
+                                <p class="text-white font-bold mt-1 text-xs truncate">EDUP6023</p>
+                            </div>
+                            <i data-lucide="book-open-check" class="w-3.5 h-3.5 text-emerald-400 group-hover:scale-105 transition shrink-0"></i>
+                        </button>
+
+                        <!-- Butang Maklumat 5: Bidang & Fokus -->
+                        <button type="button" data-info-card="4" class="info-card-btn w-full text-left px-2.5 py-1.5 rounded-lg bg-stone-900/90 hover:bg-emerald-950/50 border border-stone-800 hover:border-emerald-500/40 transition-all duration-150 active:scale-[0.98] flex items-center justify-between gap-1.5 group">
+                            <div class="min-w-0">
+                                <span class="text-[9px] uppercase tracking-wider text-teal-400 font-semibold block leading-none">Bidang & Fokus</span>
+                                <p class="text-white font-semibold mt-1 text-xs truncate">Pendidikan Islam</p>
+                            </div>
+                            <i data-lucide="award" class="w-3.5 h-3.5 text-teal-400 group-hover:scale-105 transition shrink-0"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Kad Sorotan Paparan Visual & Perincian Maklumat -->
+                <div id="spotlight-card" class="flex-1 min-h-0 rounded-xl bg-stone-950/85 backdrop-blur-xl border border-emerald-500/35 px-3 py-2.5 shadow-lg flex flex-col justify-center transition-all duration-200">
+                    <div class="flex items-center justify-between gap-2">
+                        <span id="hotspot-badge" class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-emerald-500/15 text-emerald-300 text-[10px] font-medium">
+                            <i data-lucide="sparkles" class="w-3 h-3"></i>
+                            Maklumat #1 • Identiti
+                        </span>
+                        <div class="flex gap-1">
+                            <button type="button" data-hotspot="0" class="hotspot-pill w-5 h-5 rounded-md bg-emerald-600 text-white text-[10px] font-semibold transition active:scale-90">1</button>
+                            <button type="button" data-hotspot="1" class="hotspot-pill w-5 h-5 rounded-md bg-stone-800 text-stone-400 hover:text-white text-[10px] font-semibold transition active:scale-90">2</button>
+                            <button type="button" data-hotspot="2" class="hotspot-pill w-5 h-5 rounded-md bg-stone-800 text-stone-400 hover:text-white text-[10px] font-semibold transition active:scale-90">3</button>
+                            <button type="button" data-hotspot="3" class="hotspot-pill w-5 h-5 rounded-md bg-stone-800 text-stone-400 hover:text-white text-[10px] font-semibold transition active:scale-90">4</button>
+                            <button type="button" data-hotspot="4" class="hotspot-pill w-5 h-5 rounded-md bg-stone-800 text-stone-400 hover:text-white text-[10px] font-semibold transition active:scale-90">5</button>
+                        </div>
+                    </div>
+                    <h2 id="hotspot-title" class="text-xs sm:text-sm font-bold text-white mt-1.5 truncate">AHMAD IRFAN ZUHDI BIN MUHD ZUKHAIRI</h2>
+                    <p id="hotspot-desc" class="text-[11px] text-stone-300 mt-1 leading-relaxed line-clamp-3">
+                        Pelajar Program Ijazah Sarjana Muda Perguruan (PISMP) — Unit PISMP PAI 3, Ambilan 2026/2030.
+                    </p>
+                </div>
+
+            </aside>
+        </main>
+
+        <!-- Modal Skrin Penuh Gambar (Dalam Bingkai App) -->
+        <div id="fullscreen-modal" class="absolute inset-0 z-50 hidden bg-stone-950/95 backdrop-blur-xl flex items-center justify-center p-4">
+            <button id="btn-close-fullscreen" type="button" aria-label="Tutup Skrin Penuh" class="absolute top-3 right-3 p-2 rounded-xl bg-stone-900 hover:bg-stone-800 text-white border border-stone-700 transition active:scale-95">
+                <i data-lucide="x" class="w-4 h-4"></i>
+            </button>
+            <img id="fullscreen-img" src="https://raw.githubusercontent.com/irfzuh/biodata-pereka/67e83d514bb36bb4f0a617aa4a6421765018b674/Forest-Toned%20Phone%20Booth%20Portrait.webp" alt="Paparan Skrin Penuh" class="max-h-[450px] max-w-full rounded-xl shadow-2xl object-contain" />
+        </div>
+    </div>
+
+    <script>
+        // Fungsi selamat untuk memaparkan ikon Lucide tanpa ralat jika CDN lambat dimuatkan
+        function renderLucideIcons() {
+            if (typeof lucide !== 'undefined' && typeof lucide.createIcons === 'function') {
+                lucide.createIcons();
+            }
+        }
+
+        // Inisialisasi ikon Lucide selepas dokumen dimuatkan
+        renderLucideIcons();
+        window.addEventListener('DOMContentLoaded', renderLucideIcons);
+        window.addEventListener('load', renderLucideIcons);
+
+        // ==========================================
+        // SISTEM KESAN BUNYI (SFX) WEB AUDIO API
+        // ==========================================
+        let sfxEnabled = true;
+        let audioCtx = null;
+
+        function initAudioContext() {
+            if (!audioCtx) {
+                const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+                if (AudioContextClass) {
+                    audioCtx = new AudioContextClass();
+                }
+            }
+            if (audioCtx && audioCtx.state === 'suspended') {
+                audioCtx.resume();
+            }
+        }
+
+        // Memainkan bunyi klik sintetik lembut apabila mana-mana butang ditekan
+        function playButtonSFX(type = 'click', noteIndex = 0) {
+            if (!sfxEnabled) return;
+            try {
+                initAudioContext();
+                if (!audioCtx) return;
+
+                const now = audioCtx.currentTime;
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+
+                if (type === 'pin' || type === 'info') {
+                    const baseFreqs = [523.25, 587.33, 659.25, 783.99, 880.0];
+                    const startFreq = baseFreqs[noteIndex % baseFreqs.length] || 580;
+                    osc.type = 'sine';
+                    osc.frequency.setValueAtTime(startFreq, now);
+                    osc.frequency.exponentialRampToValueAtTime(startFreq * 1.25, now + 0.09);
+                    gain.gain.setValueAtTime(0.14, now);
+                    gain.gain.exponentialRampToValueAtTime(0.001, now + 0.14);
+                    osc.connect(gain);
+                    gain.connect(audioCtx.destination);
+                    osc.start(now);
+                    osc.stop(now + 0.14);
+                } else {
+                    osc.type = 'triangle';
+                    osc.frequency.setValueAtTime(420, now);
+                    osc.frequency.exponentialRampToValueAtTime(160, now + 0.06);
+                    gain.gain.setValueAtTime(0.16, now);
+                    gain.gain.exponentialRampToValueAtTime(0.001, now + 0.07);
+                    osc.connect(gain);
+                    gain.connect(audioCtx.destination);
+                    osc.start(now);
+                    osc.stop(now + 0.07);
+                }
+            } catch (err) {
+                console.warn('SFX tidak dapat dimainkan:', err);
+            }
+        }
+
+        // Pasang pendengar SFX pada semua butang di halaman
+        document.querySelectorAll('button').forEach((btn) => {
+            btn.addEventListener('click', () => {
+                if (btn.id === 'btn-toggle-sfx' && !sfxEnabled) return;
+                if (btn.hasAttribute('data-hotspot')) {
+                    playButtonSFX('pin', Number(btn.dataset.hotspot));
+                } else if (btn.hasAttribute('data-info-card')) {
+                    playButtonSFX('info', Number(btn.dataset.infoCard));
+                } else {
+                    playButtonSFX('click');
+                }
+            });
+        });
+
+        // Butang togol hidup/mati SFX
+        const btnToggleSfx = document.getElementById('btn-toggle-sfx');
+        btnToggleSfx.addEventListener('click', () => {
+            sfxEnabled = !sfxEnabled;
+            if (sfxEnabled) {
+                playButtonSFX('pin', 2);
+                btnToggleSfx.innerHTML = `<i data-lucide="volume-2" class="w-3.5 h-3.5"></i><span>SFX: Aktif</span>`;
+                btnToggleSfx.classList.replace('text-stone-400', 'text-emerald-300');
+            } else {
+                btnToggleSfx.innerHTML = `<i data-lucide="volume-x" class="w-3.5 h-3.5"></i><span>SFX: Senyap</span>`;
+                btnToggleSfx.classList.replace('text-emerald-300', 'text-stone-400');
+            }
+            renderLucideIcons();
+        });
+
+        // ==========================================
+        // DATA PROFIL & KAWALAN GAMBAR
+        // ==========================================
+        const mainArtwork = document.getElementById('main-artwork');
+        const fullscreenImg = document.getElementById('fullscreen-img');
+        const fallbackIllustration = document.getElementById('fallback-illustration');
+
+        if (mainArtwork && fallbackIllustration) {
+            mainArtwork.onerror = function() {
+                mainArtwork.classList.add('hidden');
+                fallbackIllustration.classList.remove('hidden');
+            };
+            mainArtwork.onload = function() {
+                mainArtwork.classList.remove('hidden');
+                fallbackIllustration.classList.add('hidden');
+            };
+        }
+
+        const hotspotData = [
+            {
+                badge: 'Maklumat #1 • Identiti',
+                title: 'AHMAD IRFAN ZUHDI BIN MUHD ZUKHAIRI',
+                desc: 'Pelajar Program Ijazah Sarjana Muda Perguruan (PISMP) — Unit PISMP PAI 3, Ambilan 2026/2030.'
+            },
+            {
+                badge: 'Maklumat #2 • Unit Pengajian',
+                title: 'UNIT: PISMP PAI 3',
+                desc: 'Kumpulan kuliah Pendidikan Islam 3 di bawah program latihan perguruan praperkhidmatan.'
+            },
+            {
+                badge: 'Maklumat #3 • Kohort Ambilan',
+                title: 'AMBILAN: 2026/2030',
+                desc: 'Tempoh pengajian ikhtisas perguruan selama empat tahun bagi sesi akademik 2026 hingga 2030.'
+            },
+            {
+                badge: 'Maklumat #4 • Kursus / Subjek',
+                title: 'SUBJEK: EDUP6023',
+                desc: 'Paparan portfolio digital dan profil interaktif pelajar bagi memenuhi keperluan kursus EDUP6023.'
+            },
+            {
+                badge: 'Maklumat #5 • Bidang & Aspirasi',
+                title: 'PENGKHUSUSAN PENDIDIKAN ISLAM',
+                desc: 'Memperkasa kemahiran pedagogi digital dan reka bentuk visual kreatif dalam pendidikan masa hadapan.'
+            }
+        ];
+
+        // Interaksi Pin & Kad Maklumat Profil
+        function selectHotspot(index) {
+            const idxNum = Number(index);
+            const item = hotspotData[idxNum];
+            if (!item) return;
+
+            document.getElementById('hotspot-badge').innerHTML = `<i data-lucide="sparkles" class="w-3 h-3"></i> ${item.badge}`;
+            document.getElementById('hotspot-title').textContent = item.title;
+            document.getElementById('hotspot-desc').textContent = item.desc;
+            renderLucideIcons();
+
+            // Animasi sorotan visual pada kad paparan maklumat
+            const spotlightCard = document.getElementById('spotlight-card');
+            spotlightCard.classList.add('ring-2', 'ring-emerald-400/60', 'scale-[1.01]');
+            setTimeout(() => {
+                spotlightCard.classList.remove('ring-2', 'ring-emerald-400/60', 'scale-[1.01]');
+            }, 220);
+
+            // Kemas kini keadaan aktif butang nombor (1-5)
+            document.querySelectorAll('.hotspot-pill').forEach((pill, idx) => {
+                if (idx === idxNum) {
+                    pill.className = 'hotspot-pill w-5 h-5 rounded-md bg-emerald-600 text-white text-[10px] font-semibold transition active:scale-90 shadow-sm shadow-emerald-950';
+                } else {
+                    pill.className = 'hotspot-pill w-5 h-5 rounded-md bg-stone-800 text-stone-400 hover:text-white text-[10px] font-semibold transition active:scale-90';
+                }
+            });
+
+            // Kemas kini keadaan aktif kad butang profil
+            document.querySelectorAll('.info-card-btn').forEach((card, idx) => {
+                if (idx === idxNum) {
+                    card.classList.add('border-emerald-500/60', 'ring-1', 'ring-emerald-500/30', 'bg-emerald-950/45');
+                    card.classList.remove('border-stone-800');
+                } else {
+                    card.classList.remove('border-emerald-500/60', 'ring-1', 'ring-emerald-500/30', 'bg-emerald-950/45');
+                    card.classList.add('border-stone-800');
+                }
+            });
+        }
+
+        document.querySelectorAll('[data-hotspot]').forEach(el => {
+            el.addEventListener('click', () => selectHotspot(el.dataset.hotspot));
+        });
+
+        document.querySelectorAll('[data-info-card]').forEach(el => {
+            el.addEventListener('click', () => selectHotspot(el.dataset.infoCard));
+        });
+
+        // Modal Skrin Penuh Gambar
+        const fullscreenModal = document.getElementById('fullscreen-modal');
+        document.getElementById('btn-fullscreen').addEventListener('click', () => {
+            if (!mainArtwork.classList.contains('hidden')) {
+                fullscreenImg.src = mainArtwork.src;
+                fullscreenModal.classList.remove('hidden');
+            }
+        });
+
+        document.getElementById('btn-close-fullscreen').addEventListener('click', () => {
+            fullscreenModal.classList.add('hidden');
+        });
+
+        fullscreenModal.addEventListener('click', (e) => {
+            if (e.target === fullscreenModal) {
+                playButtonSFX('click');
+                fullscreenModal.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
